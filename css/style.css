@@ -1,0 +1,19 @@
+.card-comments img{
+  width: 4rem;
+}
+
+.map{
+  height: 400px;
+  margin: 0 auto 1rem auto;
+  width: 80%;
+}
+
+.cover{
+  background-size: cover;
+  background: url("https://www.netmanage.ch/images/prestations/web.jpg");
+  border-radius: 5px 5px 0 0;
+  box-shadow: inset rgba(0,0,0,0.2) 64px 64px 16px;
+  height: 15rem;
+  margin: 0;
+  padding: 0;
+}
