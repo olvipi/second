@@ -5,7 +5,7 @@
 	<meta charset='utf-8'>
 	<meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
 	<meta content='ie=edge' http-equiv='x-ua-compatible'>
-	
+
 	<title>Contacts</title>
 	<link href='img/favicon.ico' rel='shortcut icon' type='image/x-icon'>
 	<!-- Font Awesome -->
@@ -16,7 +16,17 @@
 	<link href='css/mdb.min.css' rel='stylesheet'>
 	<!-- Your custom styles (optional) -->
 	<link href='css/style.css' rel='stylesheet'>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-188043863-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-188043863-1');
+	</script>
 </head>
+
 <body>
 	<header>
 		<nav class='navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar'>
@@ -24,14 +34,14 @@
 				<a class='navbar-brand waves-effect empty-anchor' href='#'>
 					<strong class='blue-text'>Brand</strong>
 				</a>
-				
+
 				<button aria-controls='contentId' aria-expanded='false' class='navbar-toggler' data-target='#contentId'
-				        data-toggle='collapse' type='button'>
+					data-toggle='collapse' type='button'>
 					<span class='navbar-toggler-icon'></span>
 				</button>
-				
+
 				<div class='collapse navbar-collapse' id='contentId'>
-					
+
 					<ul class='navbar-nav mr-auto'>
 						<li class='nav-item '>
 							<a class='nav-link waves-effect' href='index.html'>Home</a>
@@ -46,41 +56,41 @@
 							<a class='nav-link waves-effect empty-anchor' href='#'>Contacts</a>
 						</li>
 					</ul>
-					
+
 					<ul class='navbar-nav nav-flex-icons'>
 						<li class='nav-item'>
 							<a class='nav-link waves-effect border border-light rounded' href='https://www.facebook.com/'>
 								<i class='fab fa-facebook-square'></i>
 							</a>
 						</li>
-						
+
 						<li class='nav-item'>
 							<a class='nav-link waves-effect border border-light rounded' href='https://twitter.com/'>
 								<i class='fab fa-twitter-square'></i>
 							</a>
 						</li>
-						
+
 						<li class='nav-item'>
 							<a class='nav-link waves-effect border border-light rounded' href='https://www.youtube.com/'>
 								<i class='fab fa-youtube-square'></i>
 							</a>
 						</li>
-						
-						
+
+
 						<li class='nav-item'>
 							<a class='nav-link waves-effect border border-light rounded' href='https://github.com/olvipi'>
 								<i class='fab fa-github-square'></i>
 							</a>
 						</li>
 					</ul>
-				
+
 				</div>
 			</div>
 		</nav>
 	</header>
-	
+
 	<main class='mt-5 p-5 row'>
-		
+
 		<div class='container col-lg-8'>
 			<section class='card h-100'>
 				<div class='card-header'>
@@ -96,16 +106,16 @@
 						<p><i class='fas fa-phone prefix'></i> 000 - 000-00-00</p>
 					</div>
 				</div>
-			
+
 			</section>
 		</div>
-		
+
 		<div class='container col-lg-4'>
 			<section class='card h-100'>
 				<div class='card-header'>
 					<h4>Contact form</h4>
 				</div>
-				
+
 				<div class='card-body'>
 					<div class=''>
 						<!-- Form contact -->
@@ -136,7 +146,7 @@
 			</section>
 		</div>
 	</main>
-	
+
 	<footer class='page-footer text-center font-small mdb-color darken-2 mt-4 wow fadeIn'>
 		<div class='py-3'>
 			<a class='fab fa-facebook mr-3' href='https://www.facebook.com/'></a>
@@ -144,38 +154,38 @@
 			<a class='fab fa-youtube mr-3' href='https://www.youtube.com/'></a>
 			<a class='fab fa-github mr-3' href='https://github.com/olvipi'></a>
 		</div>
-		
+
 		<div class='footer-copyright py-3'>
 			olvipi 2019
 		</div>
 	</footer>
-	
+
 	<!-- SCRIPTS -->
 	<!-- GoogleMaps -->
 	<script async defer
-	        src='https://maps.googleapis.com/maps/api/js?key=AIzaSyB-jnwCdTJColYczy9C7V1XLDwYoRjdj2w&language=en&callback=initMap'></script>
-	
+		src='https://maps.googleapis.com/maps/api/js?key=AIzaSyB-jnwCdTJColYczy9C7V1XLDwYoRjdj2w&language=en&callback=initMap'></script>
+
 	<script>
-    function initMap() {
-      var myLatLng = {lat: 50.2536277, lng: 28.6655191};
+		function initMap() {
+			var myLatLng = { lat: 50.2536277, lng: 28.6655191 };
 
-      // Create a map object and specify the DOM element
-      // for display.
-      var map = new google.maps.Map(document.getElementById('map'), {
-        center: myLatLng,
-        zoom: 10
+			// Create a map object and specify the DOM element
+			// for display.
+			var map = new google.maps.Map(document.getElementById('map'), {
+				center: myLatLng,
+				zoom: 10
 
-      });
+			});
 
-      // Create a marker and set its position.
-      var marker = new google.maps.Marker({
-        map: map,
-        position: myLatLng,
-        title: 'We are here!'
-      });
-    }
+			// Create a marker and set its position.
+			var marker = new google.maps.Marker({
+				map: map,
+				position: myLatLng,
+				title: 'We are here!'
+			});
+		}
 	</script>
-	
+
 	<!-- JQuery -->
 	<script src='js/jquery-3.3.1.min.js' type='text/javascript'></script>
 	<!-- Bootstrap tooltips -->
@@ -186,10 +196,11 @@
 	<script src='js/mdb.min.js' type='text/javascript'></script>
 	<!-- Custom script -->
 	<script src='js/main.js' type='text/javascript'></script>
-	
+
 	<script>
-    new WOW().init();
+		new WOW().init();
 	</script>
 
 </body>
+
 </html>
